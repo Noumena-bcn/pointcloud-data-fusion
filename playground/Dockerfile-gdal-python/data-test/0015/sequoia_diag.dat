@@ -1,0 +1,1085 @@
+---------------------------------------------------- beginning of /proc/kmsg
+====================== ULOGCAT SESSION START  ======================
+K 01-01 00:00:00.000 I KERNEL                                       : Booting Linux on physical CPU 0
+K 01-01 00:00:00.000 I KERNEL                                       : Initializing cgroup subsys cpu
+K 01-01 00:00:00.000 N KERNEL                                       : Linux version 3.4.11-02615-g966c687 (jenkins@55a5506afedd) (gcc version 4.6.3 (Sourcery CodeBench Lite 2012.03-57) ) #1 SMP PREEMPT Fri Jun 2 18:25:21 CEST 2017
+K 01-01 00:00:00.000 W KERNEL                                       : CPU: ARMv7 Processor [412fc097] revision 7 (ARMv7), cr=10c53c7d
+K 01-01 00:00:00.000 W KERNEL                                       : CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+K 01-01 00:00:00.000 W KERNEL                                       : Machine: Sicilia board
+K 01-01 00:00:00.000 I KERNEL                                       : P7 per device DMA memory regions:
+K 01-01 00:00:00.000 I KERNEL                                       : 	bff00000:bfffffff: ramoops.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:0797ffff: avicam.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.2
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.3
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.4
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.5
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:071fafff: avi_m2m.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:0bbfffff: hx280-venc.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	bfe00000:bfefffff: ci_hdrc.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	bfd00000:bfdfffff: ci_hdrc.1
+K 01-01 00:00:00.000 W KERNEL                                       : Memory policy: ECC disabled, Data cache writealloc
+K 01-01 00:00:00.000 D KERNEL                                       : On node 0 totalpages: 143104
+K 01-01 00:00:00.000 D KERNEL                                       : free_area_init_node: node 0, pgdat 80910fc0, node_mem_map 80ecb000
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 2048 pages used for memmap
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 0 pages reserved
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 141056 pages, LIFO batch:31
+K 01-01 00:00:00.000 I KERNEL                                       : PERCPU: Embedded 8 pages/cpu @816d9000 s12160 r8192 d12416 u32768
+K 01-01 00:00:00.000 D KERNEL                                       : pcpu-alloc: s12160 r8192 d12416 u32768 alloc=8*4096
+K 01-01 00:00:00.000 D KERNEL                                       : pcpu-alloc: [0] 0 [0] 1 
+K 01-01 00:00:00.000 W KERNEL                                       : Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 141056
+K 01-01 00:00:00.000 N KERNEL                                       : Kernel command line:  boxinit.serialno=P742P44U110000B0F190  calib=0x001C0036 console=ttyPA0,115200 loglevel=8 root=/dev/mmcblk0p4 rootfstype=ext4 rootwait parrot_force_usbd boxinit.debuggable=0 boxinit.application=PA_SICILIA boxinit.plateform=PTA_P7 androidboot.bootloader=ecos-bootloader-p7-start-344-g5f4bbf8 
+K 01-01 00:00:00.000 I KERNEL                                       : PID hash table entries: 4096 (order: 2, 16384 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Memory: 559MB = 559MB total
+K 01-01 00:00:00.000 N KERNEL                                       : Memory: 548108k/548108k available, 500468k reserved, 0K highmem
+K 01-01 00:00:00.000 N KERNEL                                       : Virtual kernel memory layout:
+K 01-01 00:00:00.000 N KERNEL                                       :     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :     vmalloc : 0xc0800000 - 0xff000000   (1000 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :     modules : 0x7f000000 - 0x80000000   (  16 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .text : 0x80008000 - 0x8085ad88   (8524 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .init : 0x8085b000 - 0x80893f80   ( 228 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .data : 0x80894000 - 0x809134a0   ( 510 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :        .bss : 0x809134c4 - 0x80ecacc8   (5855 kB)
+K 01-01 00:00:00.000 I KERNEL                                       : Preemptible hierarchical RCU implementation.
+K 01-01 00:00:00.000 I KERNEL                                       : 	Additional per-CPU info printed with stalls.
+K 01-01 00:00:00.000 I KERNEL                                       : NR_IRQS:202
+K 01-01 00:00:00.000 D KERNEL                                       : p7: IRQ setup
+K 01-01 00:00:00.000 D KERNEL                                       : p7: found Parrot7 chip v3 [0x50373032]
+K 01-01 00:00:00.000 D KERNEL                                       : p7: tick setup
+K 01-01 00:00:00.000 I KERNEL                                       : sched_clock: 32 bits at 97MHz, resolution 10ns, wraps every 44050ms
+K 01-01 00:00:00.000 I KERNEL                                       : Console: colour dummy device 80x30
+K 01-01 00:00:00.000 W KERNEL                                       : Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_SUBCLASSES:  8
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCK_DEPTH:          48
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_KEYS:        8191
+K 01-01 00:00:00.000 W KERNEL                                       : ... CLASSHASH_SIZE:          4096
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_ENTRIES:     16384
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_CHAINS:      32768
+K 01-01 00:00:00.000 W KERNEL                                       : ... CHAINHASH_SIZE:          16384
+K 01-01 00:00:00.000 W KERNEL                                       :  memory used by lock dependency info: 3679 kB
+K 01-01 00:00:00.000 W KERNEL                                       :  per task-struct memory footprint: 1152 bytes
+K 01-01 00:00:00.150 I KERNEL                                       : Calibrating delay using timer specific routine.. 1565.37 BogoMIPS (lpj=7826856)
+K 01-01 00:00:00.150 I KERNEL                                       : pid_max: default: 32768 minimum: 301
+K 01-01 00:00:00.152 I KERNEL                                       : Mount-cache hash table entries: 512
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys debug
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys cpuacct
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys freezer
+K 01-01 00:00:00.158 I KERNEL                                       : CPU: Testing write buffer coherency: ok
+K 01-01 00:00:00.160 I KERNEL                                       : CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+K 01-01 00:00:00.160 I KERNEL                                       : hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+K 01-01 00:00:00.160 I KERNEL                                       : Setting up static identity map for 0x805fd438 - 0x805fd490
+K 01-01 00:00:00.161 D KERNEL                                       : p7: powering built-in self test off
+K 01-01 00:00:00.161 D KERNEL                                       : p7: setting L2C latencies to tag=00000020 data=00000020.
+K 01-01 00:00:00.161 I KERNEL                                       : L310 cache controller enabled
+K 01-01 00:00:00.161 I KERNEL                                       : l2x0: 16 ways, CACHE_ID 0x410004c5, AUX_CTRL 0x72450801, Cache size: 524288 B
+K 01-01 00:00:00.261 W KERNEL                                       : CPU1: Booted secondary processor
+K 01-01 00:00:00.410 I KERNEL                                       : CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+K 01-01 00:00:00.410 I KERNEL                                       : Brought up 2 CPUs
+K 01-01 00:00:00.410 I KERNEL                                       : SMP: Total of 2 processors activated (3125.42 BogoMIPS).
+K 01-01 00:00:00.413 I KERNEL                                       : devtmpfs: initialized
+K 01-01 00:00:00.444 I KERNEL                                       : pinctrl core: initialized pinctrl subsystem
+K 01-01 00:00:00.446 I KERNEL                                       : dummy: 
+K 01-01 00:00:00.447 I KERNEL                                       : NET: Registered protocol family 16
+K 01-01 00:00:00.450 W KERNEL                                       : i2c-core: driver [p7mu] using legacy suspend method
+K 01-01 00:00:00.450 W KERNEL                                       : i2c-core: driver [p7mu] using legacy resume method
+K 01-01 00:00:00.451 I KERNEL                                       : Ram Oops registered with memory from bff00000-bfffffff
+K 01-01 00:00:00.451 D KERNEL                                       : p7: machine setup
+K 01-01 00:00:00.451 D KERNEL                                       : p7: registering p7-ion.0...
+K 01-01 00:00:00.451 D KERNEL                                       : p7: registering p7-pinctrl.0...
+K 01-01 00:00:00.452 I KERNEL                                       : p7-pinctrl p7-pinctrl.0: loaded
+K 01-01 00:00:00.452 D KERNEL                                       : p7: registering user_gpio.-1...
+K 01-01 00:00:00.453 D KERNEL                                       : p7: registering pl330-dma.0...
+K 01-01 00:00:00.453 I KERNEL                                       : amba pl330-dma.0: mapped microcode memory region [00100000:00101fff]
+K 01-01 00:00:00.454 D KERNEL                                       : p7: registering p7-gpio.0...
+K 01-01 00:00:00.454 I KERNEL                                       : gpiochip_add: registered GPIOs 0 to 219 on device: p7-gpio
+K 01-01 00:00:00.454 I KERNEL                                       : p7-gpio p7-gpio.0: GPIO driver initialized
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 71 (SPI_09b__GPIO_071__PWM_15)
+K 01-01 00:00:00.455 D KERNEL                                       : p7: config pin 72 (SPI_10b__GPIO_072)
+K 01-01 00:00:00.455 D KERNEL                                       : p7: config pin 73 (SPI_11b__GPIO_073__I2C_SECURE_CLKa)
+K 01-01 00:00:00.455 D KERNEL                                       : p7: config pin 74 (SPI_12b__GPIO_074)
+K 01-01 00:00:00.455 I KERNEL                                       : sicilia rev 4
+K 01-01 00:00:00.455 D KERNEL                                       : p7: registering px-uart.0...
+K 01-01 00:00:00.455 D KERNEL                                       : p7: registering px-uart.0 I/O pins...
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_RX I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_RX__GPIO_055 I/O pin settings
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_TX I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_TX__GPIO_056 I/O pin settings
+K 01-01 00:00:00.455 I KERNEL                                       : hw_info : uart 0 rts/cts 0
+K 01-01 00:00:00.456 D KERNEL                                       : p7: registering p7-i2cm.0 I/O pins...
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_CLK I/O pin function
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_CLK__GPIO_064__I2C_0_SL_CLK I/O pin settings
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_DAT I/O pin function
+K 01-01 00:00:00.456 D KERNEL                                       : p7:	install I2C_0_DAT__GPIO_063__I2C_0_SL_DAT I/O pin settings
+K 01-01 00:00:00.456 D KERNEL                                       : p7: registering p7-i2cm.0...
+K 01-01 00:00:00.457 I KERNEL                                       : p7-i2cm p7-i2cm.0: controller probe successfully
+K 01-01 00:00:00.457 I KERNEL                                       : p7-i2cm.0 debugfs interface registered
+K 01-01 00:00:00.457 D KERNEL                                       : p7: registering p7-i2cm.1 I/O pins...
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_CLK I/O pin function
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_CLK__GPIO_062__I2C_1_SL_CLK I/O pin settings
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_DAT I/O pin function
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_DAT__GPIO_061__I2C_1_SL_DAT I/O pin settings
+K 01-01 00:00:00.457 D KERNEL                                       : p7: registering p7-i2cm.1...
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm p7-i2cm.1: controller probe successfully
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm.1 debugfs interface registered
+K 01-01 00:00:00.458 D KERNEL                                       : p7: registering p7-i2cm.2 I/O pins...
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_CLK I/O pin function
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_CLK__GPIO_060__I2C_2_SL_CLK I/O pin settings
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_DAT I/O pin function
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_DAT__GPIO_059__I2C_2_SL_DAT I/O pin settings
+K 01-01 00:00:00.458 D KERNEL                                       : p7: registering p7-i2cm.2...
+K 01-01 00:00:00.459 I KERNEL                                       : p7-i2cm p7-i2cm.2: controller probe successfully
+K 01-01 00:00:00.459 I KERNEL                                       : p7-i2cm.2 debugfs interface registered
+K 01-01 00:00:00.459 D KERNEL                                       : p7: registering p7mu 0-0031...
+K 01-01 00:00:00.459 D KERNEL                                       : p7: registering 0-0031 I/O pins...
+K 01-01 00:00:00.459 D KERNEL                                       : p7:	install REBOOT_P7MU I/O pin function
+K 01-01 00:00:00.460 E KERNEL                                       : p7mu 0-0031: 32 Mhz clock do not match wanted int got ext
+K 01-01 00:00:00.460 I KERNEL                                       : p7mu 0-0031: boot reason: first boot
+K 01-01 00:00:00.461 I KERNEL                                       : p7mu 0-0031: p7mu event before reboot : 
+K 01-01 00:00:00.462 I KERNEL                                       : p7mu 0-0031: p7mu irq 160 182
+K 01-01 00:00:00.464 I KERNEL                                       : gpiochip_add: registered GPIOs 220 to 224 on device: p7mu-gpio
+K 01-01 00:00:00.464 I KERNEL                                       : p7mu 0-0031: attached device v2 to I2C bus p7-i2cm.0
+K 01-01 00:00:00.465 D KERNEL                                       : p7: config pin 49 (GPIO_049)
+K 01-01 00:00:00.465 D KERNEL                                       : p7: config pin 50 (GPIO_050)
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering switch-voltage.3...
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering acs3-sdhci.0...
+K 01-01 00:00:00.466 D KERNEL                                       : p7: registering acs3-sdhci.0 I/O pins...
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CLK I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CLK__GPIO_021 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CMD I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_CMD__GPIO_022 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT00 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT00__GPIO_023 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT01 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT01__GPIO_024 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT02 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT02__GPIO_025 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT03 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install SD_0_DAT03__GPIO_026 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7: registering p7_pwm.0 I/O pins...
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_00 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_00__GPIO_119__PWM_00 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_01 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_01__GPIO_120__PWM_01 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_05 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_06 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_07 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_07__GPIO_126__PWM_07 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_08 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_08__GPIO_127__PWM_08 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_09 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_09__GPIO_128__PWM_09 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7: registering p7_pwm.0...
+K 01-01 00:00:00.468 D KERNEL                                       : p7: registering avi.0...
+K 01-01 00:00:00.468 D KERNEL                                       : p7: registering avicam.0...
+K 01-01 00:00:00.468 D KERNEL                                       : p7: registering avicam.0 I/O pins...
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_CLK I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_HS I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_VS I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA08 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA09 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA10 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA11 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA12 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA13 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA14 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA15 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA16 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA17 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7: registering avicam.2...
+K 01-01 00:00:00.501 D KERNEL                                       : p7: registering avicam.2 I/O pins...
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_CLK I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_HS I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_VS I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA00 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA01 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA02 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA03 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA04 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA05 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA06 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA07 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA08 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA09 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7: registering avicam.3...
+K 01-01 00:00:00.521 D KERNEL                                       : p7: registering avicam.3 I/O pins...
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_CLK I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_HS I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_VS I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA00 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA01 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA02 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA03 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA04 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA05 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA06 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA07 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA08a I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA09a I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7: registering avicam.4...
+K 01-01 00:00:00.541 D KERNEL                                       : p7: registering avicam.4 I/O pins...
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_CLK I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_HS I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_VS I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA00 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA01 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA02 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA03 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA04 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA05 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA06 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA07 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA08 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA09 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering avicam.5...
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering avicam.5 I/O pins...
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_CLK I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_HS I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_VS I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA00 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA01 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA02 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA03 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA04 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA05 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA06 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA07 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA08 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA09 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.0...
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.0 I/O pins...
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA00 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA00__GPIO_095 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA01 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA01__GPIO_096 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA02 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA02__GPIO_097 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA03 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA03__GPIO_098 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA04 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA04__GPIO_099 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA05 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA05__GPIO_100 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA06 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA06__GPIO_101 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA07 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA07__GPIO_102 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_NXT I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_NXT__GPIO_103 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_STP I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_STP__GPIO_117 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DIR I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DIR__GPIO_104 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_CLK I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_CLK__GPIO_105 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering ci_hdrc.1...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering ci_hdrc.1 I/O pins...
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA00 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA00__GPIO_106__I2C_2_CLKa I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA01 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA01__GPIO_107__I2C_2_DATa I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA02 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA02__GPIO_108__I2C_2_CLKb I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA03 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA03__GPIO_109__I2C_2_DATb I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA04 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA04__GPIO_110__I2C_2_CLKc I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA05 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA05__GPIO_111__I2C_2_DATc I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA06 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA06__GPIO_112__I2C_2_CLKd I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA07 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA07__GPIO_113__I2C_2_DATd I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_NXT I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_NXT__GPIO_114__I2C_2_CLKe I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_STP I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_STP__GPIO_116__I2C_2_DATe I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DIR I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DIR__GPIO_115 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_CLK I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_CLK__GPIO_118 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering hx280-venc.0...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering avi_m2m.0...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering avi_m2m.1...
+K 01-01 00:00:00.563 I KERNEL                                       : hw_info : i2c-1 device 0x68 : mpu6050 (IMU)
+K 01-01 00:00:00.564 I KERNEL                                       : Export GPIO-76 as IMU irq
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering reg-fixed-voltage.0...
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering switch-voltage.4...
+K 01-01 00:00:00.567 D KERNEL                                       : p7: registering acs3-sdhci.1...
+K 01-01 00:00:00.567 D KERNEL                                       : p7: registering acs3-sdhci.1 I/O pins...
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CLK I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CLK__GPIO_015__UART_5_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CMD I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CMD__GPIO_016__UART_5_RX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT00 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT00__GPIO_017__UART_6_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT01 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT01__GPIO_019__UART_6_RX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT02 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT02__GPIO_018__UART_7_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT03 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT03__GPIO_020__UART_7_RX I/O pin settings
+K 01-01 00:00:00.567 I KERNEL                                       : hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+K 01-01 00:00:00.567 I KERNEL                                       : hw-breakpoint: maximum watchpoint size is 4 bytes.
+K 01-01 00:00:00.597 I KERNEL                                       : bio: create slab <bio-0> at 0
+K 01-01 00:00:00.598 W KERNEL                                       : i2c-core: driver [pca953x] using legacy suspend method
+K 01-01 00:00:00.598 W KERNEL                                       : i2c-core: driver [pca953x] using legacy resume method
+K 01-01 00:00:00.599 I KERNEL                                       : vwl18xx: 1800 mV 
+K 01-01 00:00:00.601 N KERNEL                                       : SCSI subsystem initialized
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new interface driver usbfs
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new interface driver hub
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new device driver usb
+K 01-01 00:00:00.603 I KERNEL                                       : Linux media interface: v0.10
+K 01-01 00:00:00.603 I KERNEL                                       : Linux video capture interface: v2.00
+K 01-01 00:00:00.603 I KERNEL                                       : pps_core: LinuxPPS API ver. 1 registered
+K 01-01 00:00:00.603 I KERNEL                                       : pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+K 01-01 00:00:00.603 I KERNEL                                       : PTP clock support registered
+K 01-01 00:00:00.604 I KERNEL                                       : Advanced Linux Sound Architecture Driver Version 1.0.25.
+K 01-01 00:00:00.604 W KERNEL                                       : i2c-core: driver [smsc82514] using legacy suspend method
+K 01-01 00:00:00.604 W KERNEL                                       : i2c-core: driver [smsc82514] using legacy resume method
+K 01-01 00:00:00.605 W KERNEL                                       : i2c-core: driver [lvds] using legacy suspend method
+K 01-01 00:00:00.605 W KERNEL                                       : i2c-core: driver [lvds] using legacy resume method
+K 01-01 00:00:00.605 I KERNEL                                       : sdhci0_bus_vdd: 3300 mV 
+K 01-01 00:00:00.605 I KERNEL                                       : sdhci1_bus_vdd: 3300 mV 
+K 01-01 00:00:00.606 E KERNEL                                       : switch-voltage switch-voltage.4: Failed to set supply vqmmc
+K 01-01 00:00:00.606 E KERNEL                                       : switch-voltage switch-voltage.4: Failed to register regulator: -16
+K 01-01 00:00:00.606 W KERNEL                                       : switch-voltage: probe of switch-voltage.4 failed with error -16
+K 01-01 00:00:00.609 I KERNEL                                       : Switching to clocksource timer2
+K 01-01 00:00:00.797 I KERNEL                                       : NET: Registered protocol family 2
+K 01-01 00:00:00.798 I KERNEL                                       : IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+K 01-01 00:00:00.800 I KERNEL                                       : TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+K 01-01 00:00:00.803 I KERNEL                                       : TCP bind hash table entries: 65536 (order: 9, 2621440 bytes)
+K 01-01 00:00:00.818 I KERNEL                                       : TCP: Hash tables configured (established 131072 bind 65536)
+K 01-01 00:00:00.818 I KERNEL                                       : TCP: reno registered
+K 01-01 00:00:00.818 I KERNEL                                       : UDP hash table entries: 512 (order: 3, 49152 bytes)
+K 01-01 00:00:00.819 I KERNEL                                       : UDP-Lite hash table entries: 512 (order: 3, 49152 bytes)
+K 01-01 00:00:00.820 I KERNEL                                       : NET: Registered protocol family 1
+K 01-01 00:00:00.822 I KERNEL                                       : RPC: Registered named UNIX socket transport module.
+K 01-01 00:00:00.822 I KERNEL                                       : RPC: Registered udp transport module.
+K 01-01 00:00:00.822 I KERNEL                                       : RPC: Registered tcp transport module.
+K 01-01 00:00:00.822 I KERNEL                                       : RPC: Registered tcp NFSv4.1 backchannel transport module.
+K 01-01 00:00:00.832 I KERNEL                                       : squashfs: version 4.0 (2009/01/31) Phillip Lougher
+K 01-01 00:00:00.832 N KERNEL                                       : NFS: Registering the id_resolver key type
+K 01-01 00:00:00.834 I KERNEL                                       : NTFS driver 2.1.30 [Flags: R/O].
+K 01-01 00:00:00.835 I KERNEL                                       : fuse init (API version 7.18)
+K 01-01 00:00:00.835 I KERNEL                                       : msgmni has been set to 1070
+K 01-01 00:00:00.839 I KERNEL                                       : Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+K 01-01 00:00:00.839 I KERNEL                                       : io scheduler noop registered
+K 01-01 00:00:00.839 I KERNEL                                       : io scheduler deadline registered (default)
+K 01-01 00:00:00.839 I KERNEL                                       : start plist test
+K 01-01 00:00:00.843 I KERNEL                                       : end plist test
+K 01-01 00:00:00.846 I KERNEL                                       : dma-pl330 pl330-dma.0: Loaded driver for PL330 DMAC-267056
+K 01-01 00:00:00.846 I KERNEL                                       : dma-pl330 pl330-dma.0: 	DBUFF-64x8bytes Num_Chans-6 Num_Peri-7 Num_Events-6
+K 01-01 00:00:00.860 I KERNEL                                       : loop: module loaded
+K 01-01 00:00:00.865 I KERNEL                                       : tun: Universal TUN/TAP device driver, 1.6
+K 01-01 00:00:00.865 I KERNEL                                       : tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+K 01-01 00:00:00.866 I KERNEL                                       : PPP generic driver version 2.4.2
+K 01-01 00:00:00.866 I KERNEL                                       : PPP BSD Compression module registered
+K 01-01 00:00:00.866 I KERNEL                                       : PPP Deflate Compression module registered
+K 01-01 00:00:00.869 I KERNEL                                       : PPP MPPE Compression module registered
+---------------------------------------------------- beginning of /dev/ulog_main
+U 01-01 00:10:38.680 N boxinit     (init-1)                         : process 'ulog_clear', pid 952 exited
+U 01-01 00:10:39.796 I colibry     (sensors_ir-176/thread_main-177) : GPS fix with 8 satellites
+U 01-01 00:10:39.972 I colibry     (sensors_ir-176/thread_main-177) : GPS fix with 9 satellites
+U 01-01 00:10:40.205 I pomp_comm_s (palermo-197/MainLoop-259)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_ENABLED
+U 01-01 00:10:40.205 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_ENABLED
+U 01-01 00:10:40.206 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:10:40.206 I             (mtp-server-279/client_pomp-317) : [mtp-server][I] pompOK : ctrlID:14
+U 01-01 00:10:40.207 I pomp_comm_s (palermo-197/MainLoop-259)       : server_generated_message_handler: received event SICILIA_CTRL_CAPTURE_GET_MODE
+U 01-01 00:10:40.207 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_CTRL_CAPTURE_GET_MODE
+U 01-01 00:10:40.240 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:10:40.240 I             (mtp-server-279/client_pomp-317) : [mtp-server][I] pompOK : ctrlID:2
+U 01-01 00:10:40.241 I pomp_comm_s (palermo-197/MainLoop-259)       : server_generated_message_handler: received event SICILIA_CTRL_STATUS
+U 01-01 00:10:40.241 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_CTRL_STATUS
+U 01-01 00:10:40.280 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:10:40.280 I             (mtp-server-279/client_pomp-317) : [mtp-server][I] pompOK : ctrlID:0
+U 01-01 00:10:40.281 I pomp_comm_s (palermo-197/MainLoop-259)       : server_generated_message_handler: received event SICILIA_CTRL_CAPTURE_START
+U 01-01 00:10:40.287 N boxinit     (init-1)                         : starting 'ulog_session'
+U 01-01 00:10:40.306 I PLRM_imaging(palermo-197/MainLoop-259)       : Set media path to '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015'
+U 01-01 00:10:40.307 I tlmblackbox (telemetryd-203)                 : setEnabled 0
+U 01-01 00:10:40.308 I sensors     (sensors_main-198/server_pomp-206): [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x76800610 msg=0x768017e8
+U 01-01 00:10:40.308 I sensors     (sensors_main-198/server_pomp-206): [SERVER_POMP] HEATING_IMU_START (old f_heat_off: TRUE)
+U 01-01 00:10:40.308 I sensors     (sensors_ir-176/server_pomp-179) : [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x9eedf0 msg=0x9effc8
+U 01-01 00:10:40.308 I sensors     (sensors_ir-176/server_pomp-179) : [SERVER_POMP] HEATING_IMU_START (old f_heat_off: TRUE)
+U 01-01 00:10:40.308 N PLRM_imaging(palermo-197/MainLoop-259)       : ---------------------------------------------
+U 01-01 00:10:40.308 N PLRM_imaging(palermo-197/MainLoop-259)       : FW version = v1.4.1
+U 01-01 00:10:40.308 N PLRM_imaging(palermo-197/MainLoop-259)       : Camera S/N = PI040378AA6D000229
+U 01-01 00:10:40.308 N PLRM_imaging(palermo-197/MainLoop-259)       : Sunshine S/N = PI040379AA6E000610
+U 01-01 00:10:40.308 N PLRM_imaging(palermo-197/MainLoop-259)       : FlightUUID = 7D14EE7F63998540968542CE5656A9D7
+U 01-01 00:10:40.308 N PLRM_imaging(palermo-197/MainLoop-259)       : ---------------------------------------------
+U 01-01 00:10:40.309 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : State Changed: Ready(2) -> SingleShot_Starting(3)
+U 01-01 00:10:40.309 I PLRM_server (palermo-197/MainLoop-259)       : event_imu_heating_status: id=0 status=1
+U 01-01 00:10:40.311 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:10:40.311 I             (mtp-server-279/client_pomp-317) : [mtp-server][I] pompOK : ctrlID:9
+U 01-01 00:10:40.311 I pomp_comm_c (civetitf-199/client_pomp-260)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:40.312 I PLRM_server (palermo-197/MainLoop-259)       : event_imu_heating_status: id=1 status=1
+U 01-01 00:10:40.313 I pomp_comm_c (civetitf-199/client_pomp-260)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:40.340 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:40.341 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:40.443 I tlmblackbox (telemetryd-203)                 : Closing file '/data/blackbox/sequoia_param.dat'
+U 01-01 00:10:40.550 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=564 >= 240 x 2 we may be desynchronised
+U 01-01 00:10:40.600 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=480 >= 240 x 2 we may be desynchronised
+U 01-01 00:10:40.622 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=120 < 240 we may be desynchronised
+U 01-01 00:10:40.643 I tlmblackbox (telemetryd-203)                 : setLogDir '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015'
+U 01-01 00:10:40.660 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=237 < 240 we may be desynchronised
+U 01-01 00:10:40.790 I tlmblackbox (telemetryd-203)                 : setEnabled 1
+U 01-01 00:10:40.790 I tlmblackbox (telemetryd-203)                 : rotate logs: '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.3' -> '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.4'
+U 01-01 00:10:40.791 I colibry     (sensors_ir-176/thread_main-177) : GPS fix with 8 satellites
+U 01-01 00:10:40.791 I tlmblackbox (telemetryd-203)                 : rotate logs: '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.2' -> '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.3'
+U 01-01 00:10:40.841 I tlmblackbox (telemetryd-203)                 : rotate logs: '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.1' -> '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.2'
+U 01-01 00:10:40.871 I tlmblackbox (telemetryd-203)                 : rotate logs: '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat' -> '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat.1'
+U 01-01 00:10:40.871 I LIBPHOTO_R2R(palermo-197/Img_FSM-304)        : R2R: mmap buffer 0: 0x6c538000
+U 01-01 00:10:40.872 I tlmblackbox (telemetryd-203)                 : Creating file '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat'
+U 01-01 00:10:40.874 I LIBPHOTO_R2R(palermo-197/Img_FSM-304)        : R2R: mmap buffer 1: 0x6ae70000
+U 01-01 00:10:40.875 I LIBPHOTO_R2R(palermo-197/Img_FSM-304)        : R2R: mmap buffer 2: 0x697a8000
+U 01-01 00:10:40.877 I LIBPHOTO_R2R(palermo-197/Img_FSM-304)        : R2R: mmap buffer 3: 0x680e0000
+U 01-01 00:10:40.884 I libHAL      (palermo-197/Img_FSM-304)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev0 associated to dev /dev/video0
+U 01-01 00:10:40.900 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=168 < 240 we may be desynchronised
+U 01-01 00:10:41.180 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=588 >= 240 x 2 we may be desynchronised
+U 01-01 00:10:41.208 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=120 < 240 we may be desynchronised
+U 01-01 00:10:41.221 I colibry     (sensors_ir-176/thread_main-177) : GPS fix with 7 satellites
+U 01-01 00:10:41.282 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=492 >= 240 x 2 we may be desynchronised
+U 01-01 00:10:41.296 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=48 < 240 we may be desynchronised
+U 01-01 00:10:41.480 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=204 < 240 we may be desynchronised
+U 01-01 00:10:41.614 W libHAL      (sensors_main-198/thread_main-205): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=216 < 240 we may be desynchronised
+U 01-01 00:10:41.616 I libHAL      (palermo-197/Img_FSM-304)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev5 associated to dev /dev/video4
+K 01-01 00:00:00.869 I KERNEL                                       : NET: Registered protocol family 24
+K 01-01 00:00:00.869 I KERNEL                                       : Initializing USB Mass Storage driver...
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver usb-storage
+K 01-01 00:00:00.870 I KERNEL                                       : USB Mass Storage support registered.
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver libusual
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver usbserial
+K 01-01 00:00:00.870 I KERNEL                                       : usbserial: USB Serial Driver core
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver ftdi_sio
+K 01-01 00:00:00.871 I KERNEL                                       : USB Serial support registered for FTDI USB Serial Device
+K 01-01 00:00:00.871 I KERNEL                                       : ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+K 01-01 00:00:00.873 D KERNEL                                       : ci_hdrc ci_hdrc.0: disabling VbusValid interrupt (0)
+K 01-01 00:00:00.875 D KERNEL                                       : ci_hdrc ci_hdrc.1: disabling VbusValid interrupt (0)
+K 01-01 00:00:00.875 I KERNEL                                       : ci_hdrc ci_hdrc.1: ChipIdea HDRC EHCI
+K 01-01 00:00:00.876 I KERNEL                                       : ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 1
+K 01-01 00:00:00.919 I KERNEL                                       : ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: Product: ChipIdea HDRC EHCI
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: Manufacturer: Linux 3.4.11-02615-g966c687 ehci_hcd
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: SerialNumber: ci_hdrc.1
+K 01-01 00:00:00.921 I KERNEL                                       : hub 1-0:1.0: USB hub found
+K 01-01 00:00:00.921 I KERNEL                                       : hub 1-0:1.0: 1 port detected
+K 01-01 00:00:00.923 I KERNEL                                       : file system registered
+K 01-01 00:00:00.928 I KERNEL                                       :  gadget: Mass Storage Function, version: 2009/09/11
+K 01-01 00:00:00.928 I KERNEL                                       :  gadget: Number of LUNs=1
+K 01-01 00:00:00.928 I KERNEL                                       :  lun0: LUN: removable file: (no medium)
+K 01-01 00:00:00.929 W KERNEL                                       : Gadget Android: controller 'ci_pdata' not recognized
+K 01-01 00:00:00.929 I KERNEL                                       :  gadget: android_usb ready
+K 01-01 00:00:00.930 I KERNEL                                       : i2c /dev entries driver
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw8834] using legacy suspend method
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw8834] using legacy resume method
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw9990] using legacy suspend method
+K 01-01 00:00:00.932 W KERNEL                                       : i2c-core: driver [tw9990] using legacy resume method
+K 01-01 00:00:00.933 I KERNEL                                       : device-mapper: uevent: version 1.0.3
+K 01-01 00:00:00.934 I KERNEL                                       : device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+K 01-01 00:00:00.934 I KERNEL                                       : sdhci: Secure Digital Host Controller Interface driver
+K 01-01 00:00:00.934 I KERNEL                                       : sdhci: Copyright(c) Pierre Ossman
+K 01-01 00:00:00.935 D KERNEL                                       : Registered led device: sicilia:green
+K 01-01 00:00:00.935 D KERNEL                                       : Registered led device: sicilia:red
+K 01-01 00:00:00.936 D KERNEL                                       : Registered led device: sicilia:blue
+K 01-01 00:00:00.937 I KERNEL                                       : usbcore: registered new interface driver usbhid
+K 01-01 00:00:00.937 I KERNEL                                       : usbhid: USB HID core driver
+K 01-01 00:00:00.939 I KERNEL                                       : ashmem: initialized
+K 01-01 00:00:00.939 I KERNEL                                       : logger: created 256K log 'log_main'
+K 01-01 00:00:00.939 I KERNEL                                       : logger: created 256K log 'log_events'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 256K log 'log_radio'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 256K log 'log_system'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 64K log 'log_ckcm'
+K 01-01 00:00:00.941 I KERNEL                                       : created 256K log 'ulog_main'
+K 01-01 00:00:00.943 I KERNEL                                       : Serial: Parrot5/5+ UART driver $Revision: 1.19 $
+K 01-01 00:00:00.944 I KERNEL                                       : px-uart.0: ttyPA0 at MMIO 0x2100000 (irq = 91) is a PARROT5
+K 01-01 00:00:03.184 I KERNEL                                       : console [ttyPA0] enabled
+K 01-01 00:00:03.188 I KERNEL                                       : avi avi.0: Found AVI revision 3
+K 01-01 00:00:03.199 I KERNEL                                       : avi avi.0: AVI core driver initialized
+K 01-01 00:00:03.206 I KERNEL                                       : AVI DebugFS registered
+K 01-01 00:00:03.216 I KERNEL                                       : Powering on maincam
+K 01-01 00:00:03.269 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:00:03.276 I KERNEL                                       : Powering off maincam
+K 01-01 00:00:03.280 I KERNEL                                       : tc358746a 2-000e: Found tc358746a chip
+K 01-01 00:00:03.284 I KERNEL                                       : tc358746a 2-000e: TC358746A MIPI bridge successfully probed
+K 01-01 00:00:03.292 I KERNEL                                       : Powering on maincam
+K 01-01 00:00:03.349 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:00:03.357 I KERNEL                                       : ov16825 2-0036: Found OV16825 chip
+K 01-01 00:00:03.361 I KERNEL                                       : Powering off maincam
+U 01-01 00:10:41.683 I libHAL      (palermo-197/Img_FSM-304)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev4 associated to dev /dev/video3
+U 01-01 00:10:41.744 I libHAL      (palermo-197/Img_FSM-304)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev3 associated to dev /dev/video2
+U 01-01 00:10:41.815 I libHAL      (palermo-197/Img_FSM-304)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev2 associated to dev /dev/video1
+U 01-01 00:10:41.876 I LIBCAM_V4L2 (palermo-197/Img_MainCam-959)    : Run cam /dev/video0 in multithreaded mode
+U 01-01 00:10:41.888 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_CAPTURE_STATUS
+U 01-01 00:10:41.888 I PLRM_server (palermo-197/Img_FSM-304)        : New status: 0x00003019
+U 01-01 00:10:41.889 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:10:41.890 I pomp_comm_c (civetitf-199/client_pomp-260)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:10:42.104 I LIBIMAG_MAIN(palermo-197/Img_MainCam-959)    : PhotoSystemInternal::onStart
+U 01-01 00:10:42.104 I LIBIMAG_MAIN(palermo-197/Img_MainCam-959)    : PhotoSystemInternal::onStart maincam capture
+U 01-01 00:10:42.108 I IMAGING_P2A (palermo-197/Img_2A-961)         : STATS 2A CROP: [ 256, 240]-[4351,3215]
+U 01-01 00:10:42.108 I IMAGING_P2A (palermo-197/Img_2A-961)         : 2A INPUT ROI: [ 256, 240]-[4351,3215]
+U 01-01 00:10:42.186 I colibry     (sensors_ir-176/thread_main-177) : GPS fix with 6 satellites
+U 01-01 00:10:42.611 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.065878 seconds (r2r=0.060624s copy=0.000775s tds=0.004002s)
+U 01-01 00:10:42.756 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystemInternal::onStart
+U 01-01 00:10:42.756 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystemInternal::onStart monocams capture
+U 01-01 00:10:42.756 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : State Changed: SingleShot_Starting(3) -> SingleShot_WaitingAE(4)
+U 01-01 00:10:42.771 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.058326 seconds (r2r=0.053163s copy=0.000924s tds=0.003818s)
+U 01-01 00:10:42.813 E Mt9m031     (palermo-197/Img_MonoCams-954)   : computeNextTargetLuma - 790 nm - ERROR Target luma change 1360-1307.41 !
+U 01-01 00:10:42.816 E Mt9m031     (palermo-197/Img_MonoCams-954)   : computeNextTargetLuma - 735 nm - ERROR Target luma change 1360-1296.46 !
+U 01-01 00:10:42.819 E Mt9m031     (palermo-197/Img_MonoCams-954)   : computeNextTargetLuma - 660 nm - ERROR Target luma change 1360-1135.28 !
+U 01-01 00:10:42.820 E Mt9m031     (palermo-197/Img_MonoCams-954)   : computeNextTargetLuma - 550 nm - ERROR Target luma change 1360-1153.86 !
+U 01-01 00:10:42.934 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.055068 seconds (r2r=0.050686s copy=0.000746s tds=0.003257s)
+U 01-01 00:10:42.967 I colibry     (sensors_ir-176/thread_main-177) : GPS fix with 4 satellites
+U 01-01 00:10:43.100 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.054707 seconds (r2r=0.050019s copy=0.000753s tds=0.003261s)
+U 01-01 00:10:43.267 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.055330 seconds (r2r=0.050559s copy=0.000683s tds=0.003602s)
+U 01-01 00:10:43.423 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : TIMED EVENT (ticks=1)
+U 01-01 00:10:43.423 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : State Changed: SingleShot_WaitingAE(4) -> SingleShot_Taking(5)
+U 01-01 00:10:43.424 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_CAPTURE_STATUS
+U 01-01 00:10:43.433 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.054715 seconds (r2r=0.049861s copy=0.000682s tds=0.003768s)
+U 01-01 00:10:43.601 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.055666 seconds (r2r=0.050129s copy=0.000731s tds=0.004411s)
+U 01-01 00:10:43.687 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : EX TIMED EVENT #0 (ticks=1)
+U 01-01 00:10:43.772 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.060798 seconds (r2r=0.055425s copy=0.000892s tds=0.004039s)
+U 01-01 00:10:43.791 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : EX TIMED EVENT #2 (ticks=1)
+U 01-01 00:10:43.803 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : EX TIMED EVENT #2 (ticks=1)
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystem::onCaptureDone: seq=0  timestamp=643.812995  wallclock=1529574068.289491 (/dev/video4 fps=30.013742)
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : Frame pushed in workqueue 1, count=1
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystem::onCaptureDone: seq=0  timestamp=643.812995  wallclock=1529574068.292148 (/dev/video3 fps=30.013742)
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : Frame pushed in workqueue 1, count=1
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystem::onCaptureDone: seq=0  timestamp=643.812995  wallclock=1529574068.294996 (/dev/video2 fps=30.013742)
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : Frame pushed in workqueue 1, count=2
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystem::onCaptureDone: seq=0  timestamp=643.812995  wallclock=1529574068.297881 (/dev/video1 fps=30.013742)
+U 01-01 00:10:43.824 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : Frame pushed in workqueue 1, count=3
+U 01-01 00:10:43.879 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : EX TIMED EVENT #1 (ticks=1)
+U 01-01 00:10:43.879 I LIBIMAG_ISP (palermo-197/Img_MainCam-959)    : ISPProcessing::onCaptureDone: seq=0  timestamp=643.877874  wallclock=1529574068.354232 (/dev/video0 [0]  fps=6.000564)
+U 01-01 00:10:43.935 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.056428 seconds (r2r=0.051479s copy=0.001066s tds=0.003374s)
+U 01-01 00:10:43.947 I LIBIMAG_ISP (palermo-197/Img_MainCam-959)    : Image 0 process by ISP in 0.067288s
+U 01-01 00:10:43.947 I LIBIMAG_MAIN(palermo-197/Img_MainCam-959)    : PhotoSystem::onCaptureDone: seq=0  timestamp=643.877874  wallclock=1529574068.354232 (/dev/video0 fps=6.000564)
+U 01-01 00:10:43.947 I LIBIMAG_MAIN(palermo-197/Img_MainCam-959)    : Frame pushed in workqueue 2, count=1
+U 01-01 00:10:43.947 I LIBIMAG_MAIN(palermo-197/Img_MainCam-959)    : Capture #0 full completed
+U 01-01 00:10:43.948 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_CAPTURE_STATUS
+U 01-01 00:10:43.949 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_SNAPSHOT
+U 01-01 00:10:43.952 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : State Changed: SingleShot_Taking(5) -> SingleShot_Stopping(6)
+U 01-01 00:10:43.953 I pomp_comm_c (civetitf-199/client_pomp-260)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_SNAPSHOT
+U 01-01 00:10:44.106 I LIBIMAG_2A  (palermo-197/Img_2A-961)         : 2A processed in 0.060291 seconds (r2r=0.055932s copy=0.000700s tds=0.003254s)
+U 01-01 00:10:44.279 I LIBIMAG_MAIN(palermo-197/Img_MonoCams-954)   : PhotoSystemInternal::onStop
+U 01-01 00:10:44.313 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : PhotoSystem::frame_consumer[1]: timestamp=643.812995 (/dev/video4) delay=500ms
+U 01-01 00:10:44.314 W PLRM_sensors(palermo-197/Img_Writer1-262)    : Failed to get gps data sample after (2)
+U 01-01 00:10:44.378 I LIBIMAG_MAIN(palermo-197/Img_Writer2-263)    : PhotoSystem::frame_consumer[2]: timestamp=643.877874 (/dev/video0) delay=500ms
+U 01-01 00:10:44.412 W PLRM_sensors(palermo-197/Img_Writer2-263)    : Failed to get gps data sample after (2)
+U 01-01 00:10:44.440 N LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : Wrote /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_NIR.TIF
+U 01-01 00:10:44.440 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : TIFF processed in 0.125372 seconds
+U 01-01 00:10:44.440 I PLRM_imaging(palermo-197/Img_Writer1-262)    : Photo Record Id = /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_NIR.TIF
+U 01-01 00:10:44.446 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : PhotoSystem::frame_consumer[1]: timestamp=643.812995 (/dev/video3) delay=633ms
+K 01-01 00:00:03.364 I KERNEL                                       : ov16825 2-0036: OV16825 sensor succesfully probed
+K 01-01 00:00:03.370 I KERNEL                                       : avicam avicam.0: video device successfuly registered as video0
+K 01-01 00:00:03.399 I KERNEL                                       : usb 1-1: new high-speed USB device number 2 using ci_hdrc
+K 01-01 00:00:03.400 I KERNEL                                       : mt9m021 2-0012: Found mt9m021 chip
+K 01-01 00:00:03.400 I KERNEL                                       : avicam avicam.2: video device successfuly registered as video1
+K 01-01 00:00:03.420 I KERNEL                                       : mt9m021 2-0013: Found mt9m021 chip
+K 01-01 00:00:03.424 I KERNEL                                       : avicam avicam.3: video device successfuly registered as video2
+K 01-01 00:00:03.450 I KERNEL                                       : mt9m021 2-0014: Found mt9m021 chip
+K 01-01 00:00:03.454 I KERNEL                                       : avicam avicam.4: video device successfuly registered as video3
+K 01-01 00:00:03.480 I KERNEL                                       : mt9m021 2-0015: Found mt9m021 chip
+K 01-01 00:00:03.484 I KERNEL                                       : avicam avicam.5: video device successfuly registered as video4
+K 01-01 00:00:03.491 I KERNEL                                       : registering avicam V4L2 subdevice nodes.
+K 01-01 00:00:03.499 I KERNEL                                       : avi_r2r Initialized
+K 01-01 00:00:03.505 I KERNEL                                       : avi avi.0: stats video device successfuly registered as video6
+K 01-01 00:00:03.512 I KERNEL                                       : avi_m2m avi_m2m.0: video device successfuly registered as video5
+K 01-01 00:00:03.522 I KERNEL                                       : avi_m2m avi_m2m.1: video device successfuly registered as video7
+K 01-01 00:00:03.530 I KERNEL                                       : avi_v4l2_dev avi: successfully probed
+K 01-01 00:00:03.535 I KERNEL                                       : hx280-venc hx280-venc.0: found hx280 video encoder (0x48313610).
+K 01-01 00:00:03.543 W KERNEL                                       : Mali: Mali device driver loaded
+K 01-01 00:00:03.549 I KERNEL                                       : mmc0: no vqmmc regulator found
+K 01-01 00:00:03.553 I KERNEL                                       : mmc0: no vmmc regulator found
+K 01-01 00:00:03.558 D KERNEL                                       : Registered led device: mmc0::
+K 01-01 00:00:03.570 I KERNEL                                       : usb 1-1: New USB device found, idVendor=058f, idProduct=6254
+K 01-01 00:00:03.576 I KERNEL                                       : usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+K 01-01 00:00:03.585 I KERNEL                                       : hub 1-1:1.0: USB hub found
+K 01-01 00:00:03.588 I KERNEL                                       : hub 1-1:1.0: 4 ports detected
+K 01-01 00:00:03.639 I KERNEL                                       : mmc0: SDHCI controller on acs3-sdhci [acs3-sdhci.0] using ADMA
+K 01-01 00:00:03.648 D KERNEL                                       : Registered led device: mmc1::
+K 01-01 00:00:03.809 I KERNEL                                       : mmc1: SDHCI controller on acs3-sdhci [acs3-sdhci.1] using ADMA
+K 01-01 00:00:03.819 I KERNEL                                       : p7mu-rtc p7mu-rtc: rtc core: registered p7mu-rtc as rtc0
+K 01-01 00:00:03.827 W KERNEL                                       : p7mu-adc p7mu-adc: No ADC channel pdata, disabling SPI
+K 01-01 00:00:03.834 I KERNEL                                       : p7mu-adc p7mu-adc: P7MU ADC - ready
+K 01-01 00:00:03.842 I KERNEL                                       : p7-temperature p7-temperature: temperature sensor and ADC registered.
+K 01-01 00:00:03.853 I KERNEL                                       : fc7100-temperature fc7100-temperature: fc7100-temperature temperature sensor and ADC registered.
+K 01-01 00:00:03.865 I KERNEL                                       : mmc0: new high speed DDR MMC card at address 0001
+K 01-01 00:00:03.871 I KERNEL                                       : usb 1-1.1: new high-speed USB device number 3 using ci_hdrc
+K 01-01 00:00:03.872 I KERNEL                                       : mmcblk0: mmc0:0001 064G70 58.2 GiB 
+K 01-01 00:00:03.882 I KERNEL                                       : u32 classifier
+K 01-01 00:00:03.882 I KERNEL                                       : mmcblk0boot0: mmc0:0001 064G70 partition 1 4.00 MiB
+K 01-01 00:00:03.883 I KERNEL                                       : mmcblk0boot1: mmc0:0001 064G70 partition 2 4.00 MiB
+K 01-01 00:00:03.897 I KERNEL                                       :     Actions configured
+K 01-01 00:00:03.901 I KERNEL                                       : Netfilter messages via NETLINK v0.30.
+K 01-01 00:00:03.906 I KERNEL                                       : nf_conntrack version 0.5.0 (8564 buckets, 34256 max)
+K 01-01 00:00:03.915 I KERNEL                                       : ctnetlink v0.93: registering with nfnetlink.
+K 01-01 00:00:03.923 I KERNEL                                       :  mmcblk0: p1 p2 p3 p4 p5 p6 p7
+K 01-01 00:00:03.925 I KERNEL                                       : NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+K 01-01 00:00:03.925 I KERNEL                                       : NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+K 01-01 00:00:03.941 I KERNEL                                       : xt_time: kernel timezone is -0000
+K 01-01 00:00:03.947 I KERNEL                                       :  mmcblk0boot1: unknown partition table
+K 01-01 00:00:03.947 I KERNEL                                       : ip_tables: (C) 2000-2006 Netfilter Core Team
+K 01-01 00:00:03.948 I KERNEL                                       : arp_tables: (C) 2002 David S. Miller
+K 01-01 00:00:03.948 I KERNEL                                       : TCP: cubic registered
+K 01-01 00:00:03.948 I KERNEL                                       : Initializing XFRM netlink socket
+K 01-01 00:00:03.969 I KERNEL                                       : NET: Registered protocol family 10
+K 01-01 00:00:03.975 I KERNEL                                       :  mmcblk0boot0: unknown partition table
+K 01-01 00:00:03.983 I KERNEL                                       : Mobile IPv6
+K 01-01 00:00:03.986 I KERNEL                                       : ip6_tables: (C) 2000-2006 Netfilter Core Team
+K 01-01 00:00:03.991 I KERNEL                                       : IPv6 over IPv4 tunneling driver
+K 01-01 00:00:03.997 I KERNEL                                       : NET: Registered protocol family 17
+K 01-01 00:00:04.002 I KERNEL                                       : NET: Registered protocol family 15
+K 01-01 00:00:04.006 I KERNEL                                       : 8021q: 802.1Q VLAN Support v1.8
+K 01-01 00:00:04.010 N KERNEL                                       : Registering the dns_resolver key type
+K 01-01 00:00:04.016 I KERNEL                                       : VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 2
+K 01-01 00:00:04.023 I KERNEL                                       : ThumbEE CPU extension supported.
+U 01-01 00:10:44.449 W PLRM_sensors(palermo-197/Img_Writer1-262)    : Failed to get gps data sample after (2)
+U 01-01 00:10:44.545 I LIBIMAG_MAIN(palermo-197/Img_MainCam-959)    : PhotoSystemInternal::onStop
+U 01-01 00:10:44.546 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : State Changed: SingleShot_Stopping(6) -> SingleShot_Stopped(7)
+U 01-01 00:10:44.546 I LIBIMAG_MAIN(palermo-197/Img_FSM-304)        : check_capture_ended: not ready: pending=4 remain=1
+U 01-01 00:10:44.546 I LIBIMAG_MAIN(palermo-197/Img_FSM-304)        : | id=0 reqcount=5 succeed=5 failed=0 recorded=1
+U 01-01 00:10:44.586 N LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : Wrote /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_REG.TIF
+U 01-01 00:10:44.586 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : TIFF processed in 0.137105 seconds
+U 01-01 00:10:44.586 I PLRM_imaging(palermo-197/Img_Writer1-262)    : Photo Record Id = /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_REG.TIF
+U 01-01 00:10:44.597 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : check_capture_ended: not ready: pending=3 remain=1
+U 01-01 00:10:44.597 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : | id=0 reqcount=5 succeed=5 failed=0 recorded=2
+U 01-01 00:10:44.598 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : PhotoSystem::frame_consumer[1]: timestamp=643.812995 (/dev/video2) delay=785ms
+U 01-01 00:10:44.610 W PLRM_sensors(palermo-197/Img_Writer1-262)    : Failed to get gps data sample after (2)
+U 01-01 00:10:44.771 N LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : Wrote /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_RED.TIF
+U 01-01 00:10:44.771 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : TIFF processed in 0.161544 seconds
+U 01-01 00:10:44.772 I PLRM_imaging(palermo-197/Img_Writer1-262)    : Photo Record Id = /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_RED.TIF
+U 01-01 00:10:44.774 I colibry     (sensors_ir-176/thread_main-177) : GPS has no fix (5 satellites)
+U 01-01 00:10:44.775 I sensors     (sensors_ir-176/thread_main-177) : COLIBRY_EVENT_MSG_GPS_NOK (datasize: 0)
+U 01-01 00:10:44.783 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : check_capture_ended: not ready: pending=2 remain=1
+U 01-01 00:10:44.783 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : | id=0 reqcount=5 succeed=5 failed=0 recorded=3
+U 01-01 00:10:44.783 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : PhotoSystem::frame_consumer[1]: timestamp=643.812995 (/dev/video1) delay=970ms
+U 01-01 00:10:44.784 W PLRM_sensors(palermo-197/Img_Writer1-262)    : gps data invalid, cannot interpolate
+U 01-01 00:10:44.907 N LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : Wrote /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_GRE.TIF
+U 01-01 00:10:44.908 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : TIFF processed in 0.123375 seconds
+U 01-01 00:10:44.908 I PLRM_imaging(palermo-197/Img_Writer1-262)    : Photo Record Id = /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_GRE.TIF
+U 01-01 00:10:44.926 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : check_capture_ended: not ready: pending=1 remain=1
+U 01-01 00:10:44.926 I LIBIMAG_MAIN(palermo-197/Img_Writer1-262)    : | id=0 reqcount=5 succeed=5 failed=0 recorded=4
+U 01-01 00:10:45.288 I LIBPHOTO_JPG(palermo-197/Img_Writer2-263)    : [JPEGCreator::nv12compress] dt3=0.000001s dt4=0.873336s <avg dt3=0.000001s dt4=0.743996s>
+U 01-01 00:10:45.288 I LIBPHOTO_JPG(palermo-197/Img_Writer2-263)    : [JPEGCreator] Compression:0.873506s
+U 01-01 00:10:45.370 I LIBPHOTO_JPG(palermo-197/Img_Writer2-263)    : [JPEGCreator] Write:0.082273s
+U 01-01 00:10:45.371 N LIBIMAG_MAIN(palermo-197/Img_Writer2-263)    : Wrote /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_RGB.JPG
+U 01-01 00:10:45.371 I LIBIMAG_MAIN(palermo-197/Img_Writer2-263)    : JPEG processed in 0.958478 seconds
+U 01-01 00:10:45.371 I PLRM_imaging(palermo-197/Img_Writer2-263)    : Photo Record Id = /tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/IMG_180621_094108_0000_RGB.JPG
+U 01-01 00:10:45.378 I LIBIMAG_MAIN(palermo-197/Img_Writer2-263)    : Capture #0 completly recorded
+U 01-01 00:10:45.399 I LIBIMAG_MAIN(palermo-197/Img_Writer2-263)    : Sync file-system...
+U 01-01 00:10:46.229 I LIBIMAG_MAIN(palermo-197/Img_Writer2-263)    : Sync file-system done
+U 01-01 00:10:46.229 I PLRM_imaging(palermo-197/Img_Writer2-263)    : onRecordSessionDone
+U 01-01 00:10:46.230 I LIBIMAG_FSM (palermo-197/Img_FSM-304)        : State Changed: SingleShot_Stopped(7) -> Ready(2)
+U 01-01 00:10:46.231 I sensors     (sensors_main-198/server_pomp-206): [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x76800610 msg=0x768017e8
+U 01-01 00:10:46.231 I sensors     (sensors_main-198/server_pomp-206): [SERVER_POMP] HEATING_IMU_STOP (old f_heat_off: FALSE)
+U 01-01 00:10:46.231 I sensors     (sensors_ir-176/server_pomp-179) : [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x9eedf0 msg=0x9effc8
+U 01-01 00:10:46.231 I PLRM_server (palermo-197/MainLoop-259)       : event_imu_heating_status: id=0 status=0
+U 01-01 00:10:46.231 I sensors     (sensors_ir-176/server_pomp-179) : [SERVER_POMP] HEATING_IMU_STOP (old f_heat_off: FALSE)
+U 01-01 00:10:46.232 I tlmblackbox (telemetryd-203)                 : setEnabled 0
+U 01-01 00:10:46.232 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:46.233 I pomp_comm_c (civetitf-199/client_pomp-260)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:46.233 I PLRM_server (palermo-197/MainLoop-259)       : event_imu_heating_status: id=1 status=0
+U 01-01 00:10:46.233 I pomp_comm_c (mtp-server-279/client_pomp-317) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:46.234 I pomp_comm_c (civetitf-199/client_pomp-260)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:10:46.319 I tlmblackbox (telemetryd-203)                 : Closing file '/tmp/mounts/usb/sda1/UNTITLED/DCIM/0015/sequoia_param.dat'
+U 01-01 00:10:46.330 I tlmblackbox (telemetryd-203)                 : setLogDir '/data/blackbox'
+U 01-01 00:10:46.331 I PLRM_imaging(palermo-197/Img_FSM-304)        : -------------------------------------------------------------------------------------------------------------------------------
+U 01-01 00:10:46.345 I tlmblackbox (telemetryd-203)                 : setEnabled 1
+U 01-01 00:10:46.345 I tlmblackbox (telemetryd-203)                 : rotate logs: '/data/blackbox/sequoia_param.dat.3' -> '/data/blackbox/sequoia_param.dat.4'
+U 01-01 00:10:46.346 I tlmblackbox (telemetryd-203)                 : rotate logs: '/data/blackbox/sequoia_param.dat.2' -> '/data/blackbox/sequoia_param.dat.3'
+U 01-01 00:10:46.346 I tlmblackbox (telemetryd-203)                 : rotate logs: '/data/blackbox/sequoia_param.dat.1' -> '/data/blackbox/sequoia_param.dat.2'
+U 01-01 00:10:46.346 I tlmblackbox (telemetryd-203)                 : rotate logs: '/data/blackbox/sequoia_param.dat' -> '/data/blackbox/sequoia_param.dat.1'
+U 01-01 00:10:46.346 I tlmblackbox (telemetryd-203)                 : Creating file '/data/blackbox/sequoia_param.dat'
+K 01-01 00:00:04.030 W KERNEL                                       : i2c-core: driver [siihdmi] using legacy suspend method
+K 01-01 00:00:04.036 I KERNEL                                       : usb 1-1.1: New USB device found, idVendor=058f, idProduct=6366
+K 01-01 00:00:04.036 W KERNEL                                       : i2c-core: driver [siihdmi] using legacy resume method
+K 01-01 00:00:04.049 I KERNEL                                       : usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+K 01-01 00:00:05.506 I KERNEL                                       : usb 1-1.1: Product: Flash Card Reader/Writer
+K 01-01 00:00:05.506 I KERNEL                                       : p7mu-rtc p7mu-rtc: setting system clock to 1970-01-01 00:00:05 UTC (5)
+K 01-01 00:00:05.519 I KERNEL                                       : ALSA device list:
+K 01-01 00:00:05.519 I KERNEL                                       : usb 1-1.1: Manufacturer: Generic
+K 01-01 00:00:05.519 I KERNEL                                       : usb 1-1.1: SerialNumber: 058F63666485
+K 01-01 00:00:05.531 I KERNEL                                       :   No soundcards found.
+K 01-01 00:00:05.532 W KERNEL                                       : mmc1: card claims to support voltages below the defined range. These will be ignored.
+K 01-01 00:00:05.533 I KERNEL                                       : scsi0 : usb-storage 1-1.1:1.0
+K 01-01 00:00:05.564 I KERNEL                                       : EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null)
+K 01-01 00:00:05.572 I KERNEL                                       : VFS: Mounted root (ext4 filesystem) readonly on device 179:4.
+K 01-01 00:00:05.579 I KERNEL                                       : Freeing init memory: 224K
+K 01-01 00:00:05.583 I KERNEL                                       : Write protecting the kernel text section 80008000 - 80826000
+K 01-01 00:00:05.597 W KERNEL                                       : mmc1: queuing unknown CIS tuple 0x91 (3 bytes)
+K 01-01 00:00:05.613 I KERNEL                                       : mmc1: new high speed SDIO card at address 0001
+K 01-01 00:00:05.639 I KERNEL                                       : usb 1-1.2: new high-speed USB device number 4 using ci_hdrc
+K 01-01 00:00:05.751 I KERNEL                                       : usb 1-1.2: New USB device found, idVendor=19cf, idProduct=5100
+K 01-01 00:00:05.758 I KERNEL                                       : usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+K 01-01 00:00:05.765 I KERNEL                                       : usb 1-1.2: Product: Sunshine
+K 01-01 00:00:05.769 I KERNEL                                       : usb 1-1.2: Manufacturer: Parrot SA
+K 01-01 00:00:05.773 I KERNEL                                       : usb 1-1.2: SerialNumber: PI040379AA6E000610
+K 01-01 00:00:05.776 I KERNEL                                       : created 128K log 'ulog_kmsgd'
+K 01-01 00:00:05.868 I KERNEL                                       : EXT4-fs (mmcblk0p6): barriers disabled
+K 01-01 00:00:06.539 N KERNEL                                       : scsi 0:0:0:0: Direct-Access     Multiple Card  Reader     1.00 PQ: 0 ANSI: 4
+K 01-01 00:00:07.143 W KERNEL                                       : EXT4-fs (mmcblk0p6): warning: mounting fs with errors, running e2fsck is recommended
+K 01-01 00:00:07.162 I KERNEL                                       : EXT4-fs (mmcblk0p6): recovery complete
+K 01-01 00:00:07.164 I KERNEL                                       : EXT4-fs (mmcblk0p6): mounted filesystem with writeback data mode. Opts: discard,data=writeback,nobarrier
+K 01-01 00:00:07.167 I KERNEL                                       : EXT4-fs (mmcblk0p7): barriers disabled
+K 01-01 00:00:07.170 I KERNEL                                       : EXT4-fs (mmcblk0p7): recovery complete
+K 01-01 00:00:07.170 I KERNEL                                       : EXT4-fs (mmcblk0p7): mounted filesystem with writeback data mode. Opts: discard,data=writeback,nobarrier
+K 01-01 00:00:07.173 I KERNEL                                       : EXT4-fs (mmcblk0p5): barriers disabled
+K 01-01 00:00:07.175 I KERNEL                                       : EXT4-fs (mmcblk0p5): mounted filesystem with writeback data mode. Opts: data=writeback,nobarrier
+K 01-01 00:00:07.193 N KERNEL                                       : sd 0:0:0:0: [sda] 63272960 512-byte logical blocks: (32.3 GB/30.1 GiB)
+K 01-01 00:00:07.196 N KERNEL                                       : sd 0:0:0:0: [sda] Write Protect is off
+K 01-01 00:00:07.196 D KERNEL                                       : sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+K 01-01 00:00:07.199 N KERNEL                                       : sd 0:0:0:0: [sda] Write cache: disabled, read cache: disabled, doesn't support DPO or FUA
+K 01-01 00:00:07.211 I KERNEL                                       :  sda: sda1
+K 01-01 00:00:07.220 N KERNEL                                       : sd 0:0:0:0: [sda] Attached SCSI removable disk
+K 01-01 00:00:07.560 I KERNEL                                       : udev[85]: starting version 164
+K 01-01 00:00:07.921 I KERNEL                                       : Loading modules backported from Linux version R8.5-0-gcb51164
+K 01-01 00:00:07.921 I KERNEL                                       : Backport generated by backports.git R8.4-0-g0d46f43
+K 01-01 00:00:07.923 I KERNEL                                       : EXT4-fs (mmcblk0p5): re-mounted. Opts: (null)
+K 01-01 00:00:08.307 W KERNEL                                       : tsl2591: module is from the staging directory, the quality is unknown, you have been warned.
+K 01-01 00:00:08.365 I KERNEL                                       : EXT4-fs (mmcblk0p4): re-mounted. Opts: (null)
+K 01-01 00:00:08.427 I KERNEL                                       : cfg80211: Calling CRDA to update world regulatory domain
+K 01-01 00:00:08.816 I KERNEL                                       : sicilia-irradiance 1-1.2:1.0: Request firware "dvb-usb-dib0700-1.23.fw"
+K 01-01 00:00:08.885 I KERNEL                                       : EXT4-fs (mmcblk0p4): re-mounted. Opts: (null)
+K 01-01 00:00:09.404 I KERNEL                                       : usb 1-1.2: Firmware started successfully
+K 01-01 00:00:09.450 I KERNEL                                       : wlcore: wl18xx HW: 183x or 180x, PG 2.2 (ROM 0x11)
+K 01-01 00:00:09.513 I KERNEL                                       : wlcore: loaded
+K 01-01 00:00:09.513 I KERNEL                                       : wlcore: driver version: 
+K 01-01 00:00:09.513 I KERNEL                                       : wlcore: compilation time: Fri Jun  2 18:29:38 2017
+K 01-01 00:00:09.605 I KERNEL                                       : sicilia-irradiance 1-1.2:1.0: Firmware downloaded
+K 01-01 00:00:09.607 I KERNEL                                       : sicilia-irradiance 1-1.2:1.0: Firmware version: 66, 17, 0x10201, 1
+K 01-01 00:00:09.609 I KERNEL                                       : sicilia-irradiance 1-1.2:1.0: TTY registration succeed
+K 01-01 00:00:09.610 I KERNEL                                       : usb 1-1.2: adapter "dib0700_mfd.0.0" (master sda:0,scl:0)
+K 01-01 00:00:09.621 I KERNEL                                       : usb 1-1.2: adapter "dib0700_mfd.2.5" (bit banging sda:2,scl:5)
+K 01-01 00:00:09.636 I KERNEL                                       : usb 1-1.2: adapter "dib0700_mfd.3.5" (bit banging sda:3,scl:5)
+K 01-01 00:00:09.646 I KERNEL                                       : usb 1-1.2: adapter "dib0700_mfd.7.5" (bit banging sda:7,scl:5)
+K 01-01 00:00:09.653 I KERNEL                                       : gpiochip_add: registered GPIOs 264 to 274 on device: dib0700_mfd
+K 01-01 00:00:09.653 I KERNEL                                       : sicilia-irradiance 1-1.2:1.0: GPIO chip registered
+K 01-01 00:00:09.665 D KERNEL                                       : Registered led device: ncp5623c:irradiance:blue
+K 01-01 00:00:09.670 D KERNEL                                       : Registered led device: ncp5623c:irradiance:green
+K 01-01 00:00:09.675 D KERNEL                                       : Registered led device: ncp5623c:irradiance:red
+K 01-01 00:00:09.743 I KERNEL                                       : usbcore: registered new interface driver sicilia-irradiance
+K 01-01 00:00:02.905 E KERNEL                                       : android_usb: already disabled
+K 01-01 00:00:03.931 E KERNEL                                       : android_usb: already disabled
+K 01-01 00:00:03.933 I KERNEL                                       : mtp_bind_config
+K 01-01 00:00:03.935 I KERNEL                                       : rndis_function_bind_config MAC: 00:00:00:00:00:00
+K 01-01 00:00:03.935 W KERNEL                                       :  gadget: using random self ethernet address
+K 01-01 00:00:03.935 W KERNEL                                       :  gadget: using random host ethernet address
+K 01-01 00:00:03.938 I KERNEL                                       : rndis0: MAC 92:fc:86:69:2b:de
+K 01-01 00:00:03.938 I KERNEL                                       : rndis0: HOST MAC 06:bc:9f:bc:f9:c0
+K 01-01 00:00:04.259 I KERNEL                                       : ADDRCONF(NETDEV_UP): rndis0: link is not ready
+K 06-21 09:30:47.335 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:30:52.634 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:30:56.619 I KERNEL                                       : android_work: did not send uevent (0 0   (null))
+K 06-21 09:30:56.733 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:30:56.734 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:30:56.856 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:30:56.915 I KERNEL                                       :  gadget: high-speed config #1: android
+K 06-21 09:30:56.918 I KERNEL                                       : android_work: sent uevent USB_STATE=CONFIGURED
+K 06-21 09:30:57.538 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:30:57.539 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:30:57.546 I KERNEL                                       : mtp_open
+K 06-21 09:30:57.548 I KERNEL                                       : ADDRCONF(NETDEV_CHANGE): rndis0: link becomes ready
+K 06-21 09:31:02.778 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:31:02.887 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:31:02.891 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:31:03.016 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:31:03.075 I KERNEL                                       :  gadget: high-speed config #1: android
+K 06-21 09:31:03.077 I KERNEL                                       : android_work: sent uevent USB_STATE=CONFIGURED
+K 06-21 09:31:03.319 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:07.851 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:08.546 D KERNEL                                       : rndis0: no IPv6 routers present
+K 06-21 09:31:12.363 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:12.364 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:31:16.941 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:21.445 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:25.975 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:25.977 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:31:30.561 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:35.079 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:39.620 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:39.621 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:31:44.243 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:48.790 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:53.299 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:31:53.301 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:31:57.894 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:02.405 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:06.957 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:06.958 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:32:11.571 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:16.081 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:20.591 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:20.593 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:32:25.184 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:29.704 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:34.215 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:34.217 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:32:38.816 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:43.342 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:47.841 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:47.843 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:32:52.455 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:32:57.006 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:01.528 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:01.530 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:33:06.120 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:10.614 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:15.103 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:15.105 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:33:19.668 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:24.179 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:28.696 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:28.698 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:33:33.274 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:37.794 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:42.307 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:42.309 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:33:46.930 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:51.471 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:55.995 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:33:55.996 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:34:00.614 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:05.138 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:09.654 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:09.655 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:34:14.283 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:18.786 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:23.313 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:23.314 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:34:27.926 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:32.448 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:36.960 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:36.961 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:34:41.547 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:46.095 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:50.597 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:50.598 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:34:55.227 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:34:59.754 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:04.288 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:04.289 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:35:08.902 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:13.406 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:17.941 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:17.942 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:35:22.541 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:27.035 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:30.877 N KERNEL                                       : EXT4-fs (mmcblk0p6): error count: 98
+K 06-21 09:35:30.877 N KERNEL                                       : EXT4-fs (mmcblk0p6): initial error at 1451606403: ext4_mb_generate_buddy:741
+K 06-21 09:35:30.877 N KERNEL                                       : EXT4-fs (mmcblk0p6): last error at 6: ext4_mb_generate_buddy:741
+K 06-21 09:35:31.545 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:31.547 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:35:36.239 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:40.765 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:45.268 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:45.270 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:35:49.870 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:54.407 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:58.903 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:35:58.904 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:36:03.524 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:08.048 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:12.585 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:12.587 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:36:17.174 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:21.672 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:26.177 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:26.179 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:36:30.790 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:35.310 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:39.812 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:39.814 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:36:44.430 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:48.953 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:53.457 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:36:53.458 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:36:58.081 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:02.580 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:07.083 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:07.084 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:37:11.668 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:16.163 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:20.682 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:20.683 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:37:25.267 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:29.775 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:34.274 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:34.276 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:37:38.905 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:43.415 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:47.909 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:47.910 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:37:52.498 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:37:57.006 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:01.516 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:01.517 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:38:06.120 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:10.617 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:15.110 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:15.111 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:38:19.724 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:24.237 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:28.752 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:28.754 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:38:33.354 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:37.852 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:42.364 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:42.365 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:38:46.950 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:51.458 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:55.969 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:38:55.970 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:39:00.457 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:39:00.552 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:39:00.557 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:39:00.592 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:00.686 I KERNEL                                       :  gadget: high-speed config #1: android
+K 06-21 09:39:00.687 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:39:00.691 I KERNEL                                       : android_work: sent uevent USB_STATE=CONFIGURED
+K 06-21 09:39:01.897 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:39:01.992 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:39:01.996 I KERNEL                                       : android_work: sent uevent USB_STATE=DISCONNECTED
+K 06-21 09:39:02.132 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 06-21 09:39:02.136 I KERNEL                                       :  gadget: high-speed config #1: android
+K 06-21 09:39:02.138 I KERNEL                                       : android_work: sent uevent USB_STATE=CONFIGURED
+K 06-21 09:39:06.334 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:06.451 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:06.524 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:06.524 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:06.524 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:06.524 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:06.708 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:08.978 I KERNEL                                       : Powering off maincam
+K 06-21 09:39:11.991 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:11.993 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:39:14.343 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:14.473 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:14.546 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:14.546 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:14.547 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:14.547 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:17.000 I KERNEL                                       : Powering off maincam
+K 06-21 09:39:19.315 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:22.394 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:22.526 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:22.595 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:22.595 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:22.595 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:22.595 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:25.049 I KERNEL                                       : Powering off maincam
+K 06-21 09:39:26.721 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:30.597 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:30.721 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:30.792 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:30.792 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:30.792 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:30.793 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:33.246 I KERNEL                                       : Powering off maincam
+K 06-21 09:39:33.489 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:33.490 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:39:38.303 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:38.434 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:38.504 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:38.505 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:38.505 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:38.505 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:40.817 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:40.959 I KERNEL                                       : Powering off maincam
+K 06-21 09:39:46.346 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:46.473 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:46.545 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:46.545 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:46.546 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:46.546 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:47.516 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:48.999 I KERNEL                                       : Powering off maincam
+K 06-21 09:39:54.402 I KERNEL                                       : Powering on maincam
+K 06-21 09:39:54.538 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:39:54.612 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:39:54.612 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:39:54.613 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:39:54.613 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:39:54.680 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:39:54.681 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:39:57.066 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:00.052 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:02.748 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:02.864 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:02.939 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:02.939 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:02.939 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:02.939 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:05.393 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:07.498 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:10.687 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:10.805 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:10.878 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:10.878 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:10.878 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:10.878 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:13.332 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:14.451 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:14.453 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:40:18.625 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:18.744 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:18.807 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:18.807 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:18.807 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:18.807 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:21.261 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:21.407 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:26.322 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:26.453 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:26.524 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:26.525 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:26.525 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:26.525 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:28.225 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:28.978 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:34.382 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:34.517 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:34.589 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:34.589 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:34.590 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:34.590 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:35.384 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:35.385 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:40:37.043 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:40.701 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:42.735 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:42.864 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:42.930 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:42.930 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:42.930 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:42.930 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:45.384 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:47.434 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:50.426 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:50.545 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:50.617 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:50.617 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:50.617 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:50.617 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:40:53.071 I KERNEL                                       : Powering off maincam
+K 06-21 09:40:54.111 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:40:54.112 E KERNEL                                       : wlcore: ERROR firmware boot failed despite 3 retries
+K 06-21 09:40:58.617 I KERNEL                                       : Powering on maincam
+K 06-21 09:40:58.740 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:40:58.814 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:40:58.814 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:40:58.814 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:40:58.814 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:41:00.745 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:41:01.268 I KERNEL                                       : Powering off maincam
+K 06-21 09:41:06.354 I KERNEL                                       : Powering on maincam
+K 06-21 09:41:06.489 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 06-21 09:41:06.566 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 06-21 09:41:06.566 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 06-21 09:41:06.566 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 06-21 09:41:06.567 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 06-21 09:41:07.582 E KERNEL                                       : wlcore: ERROR timeout waiting for the hardware to complete initialization
+K 06-21 09:41:09.020 I KERNEL                                       : Powering off maincam
