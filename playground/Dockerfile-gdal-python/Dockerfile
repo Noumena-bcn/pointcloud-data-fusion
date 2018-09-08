@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Erle Carrara <carrara.erle@gmail.com>
+MAINTAINER Starsky Lara <starsk@noumena.io>
 
 ENV GDAL_VERSION=2.2.1
 ENV GDAL_VERSION_PYTHON=2.2.1
@@ -50,7 +50,3 @@ RUN cd /tmp/gdal-${GDAL_VERSION} && \
     make -j $(nproc) && make install
 
 RUN rm /tmp/gdal-${GDAL_VERSION} -rf
-
-# RUN pip install GDAL==${GDAL_VERSION_PYTHON}
-
-#CMD ["python3"]
