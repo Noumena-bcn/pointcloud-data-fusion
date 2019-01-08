@@ -131,9 +131,9 @@ for subdir in glob.glob("/Users/aldo/Desktop/DCIM/*"):
     save = plt.imsave(ndviPath + ndviName + ".JPEG", ndvi, cmap=cm)
     print (save)
 
-    # VISUALIZATION
-    # NDVI image
-    show(ndvi, cmap=cm)
+    # # VISUALIZATION
+    # # NDVI image
+    # show(ndvi, cmap=cm)
 
 
 
